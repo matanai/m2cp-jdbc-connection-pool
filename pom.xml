@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.m2cp</groupId>
+    <artifactId>connection-pool</artifactId>
+    <version>1.0.2</version>
+    <packaging>jar</packaging>
+
+    <build>
+        <finalName>m2cp-jdbc-${project.version}</finalName>
+    </build>
+
+    <developers>
+        <developer>
+            <id>mikhailsaltyshev</id>
+            <name>Mikhail Saltyshev</name>
+            <email>mikhail.saltyshev@gmail.com</email>
+            <properties>
+                <active>true</active>
+            </properties>
+        </developer>
+    </developers>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.19</version>
+        </dependency>
+    </dependencies>
+
+</project>
