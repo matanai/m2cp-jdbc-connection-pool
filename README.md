@@ -18,7 +18,7 @@ In this project I've tried to implement all common ideas used when designing a c
 - Simple API for accessing settings
 - Thread-safe
 
-## Instructions <a name="instructions"></a> :link:
+## Instructions <a name="instructions"></a> :wrench:
 
 To start the connection pool just call `getConnection()` from the `M2CP` class. The pool gets automatically shut down when all connections have been idle for a certain amount of time (can be defined in the settings). You may even ignore calling `close()` method on a connection, as the pool will automatically reclaim each connection that has been used for too long (can also be defined in the settings). However, it is still a better practice to call `close()` method manually or via try-with-resources, as it will force the pool to reclaim the connection immediately
 
